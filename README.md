@@ -1,4 +1,4 @@
-test app using webworkers with alpha.js
+test app using webworkers and react with alpha.js
 
 the engine can be found @ [public/alpha.js](./public/alpha.js)
 
