@@ -1,0 +1,145 @@
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{border:0;font-size:100%;font:inherit;vertical-align:baseline;margin:0;padding:0}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}table{border-collapse:collapse;border-spacing:0}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font: inherit;
+}
+
+html {
+  font: 14px/20px sans-serif;
+  color: rgba(0, 0, 0, 0.8);
+  text-size-adjust: 100%;
+  font-smoothing: antialiased;
+}
+
+a {
+  text-decoration: none;
+  color:  #0094FF;
+}
+a:hover, a:active, a:focus {
+  outline: 0;
+}
+
+.Layout {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.App {
+  width: 100%;
+  max-width: 480px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ddd;
+  box-shadow: 0.5px 3px 4px 1px rgba(0, 0, 0, 0.1), 2px 5px 6px 0 rgba(0, 0, 0, 0.16);
+  overflow: hidden;
+}
+.Header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #ddd;
+  padding-top: 5px;
+}
+.Header a {
+  opacity: .8;
+  line-height: 50px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  padding: 0 30px;
+  font-weight: 200;
+  font-size: 12px;
+}
+.Header a:first-child {
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.Game {
+  display: flex;
+  flex-direction: column;
+}
+.Menu {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+}
+.Menu button {
+  cursor: pointer;
+  line-height: 30px;
+  text-align: center;
+  border: 0;
+  color: #444;
+  border-right: 1px solid #ddd;
+  display: inline-block;
+  vertical-align: baseline;
+  padding: 0 20px;
+  background: transparent;
+  font-size: 12px;
+  font-weight: 200;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.Menu button:focus {
+  outline: 0;
+}
+.Menu button.active {
+  background: #fafafa;
+  color: #0094FF;
+}
+
+
+.Board {
+  flex: 0 0 480px;
+  position: relative;
+  height: 480px;
+  width: 480px;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.Board div {
+  height: 12.5%;
+  width: 12.5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  line-height: 0;
+  transition: all 100ms ease;
+}
+.Board .dark {
+  background-color: #F2F2F2;
+}
+
+.Footer {
+  min-height: 40px;
+  border-top: 1px solid #ddd;
+  padding: 20px;
+  color: #777;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.Footer * {
+  line-height: 20px;
+  margin-right: 20px;
+}
+.Footer a {
+  color:  #0094FF;
+}
