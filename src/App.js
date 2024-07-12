@@ -4,7 +4,7 @@ import Game from './Game';
 const Header = () => (
   <div className="Header">
     <a href="/">alpha.js</a>
-    <a href="https://github.com/smichaelrogers/alpha.js-webworker-test">view on github</a>
+    // <a href="https://github.com/smichaelrogers/alpha.js-webworker-test">view on github</a>
   </div>
 )
 
