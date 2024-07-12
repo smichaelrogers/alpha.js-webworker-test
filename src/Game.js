@@ -82,6 +82,7 @@ export default class Game extends Component {
         </div>
         <div className="Footer">
           // <span>by Scott M. Rogers</span>
+          <span>by okaboose</span>
           // <a href="http://www.scottrogers.tech">Portfolio</a>
           // <a href="https://github.com/smichaelrogers">GitHub</a>
         </div>
